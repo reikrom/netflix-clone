@@ -1,0 +1,14 @@
+html {
+    background: black;
+}
+
+.bred {
+    border: 1px solid red;
+}
+
+.bred2 {
+    border: 1px solid blue;
+}
+.bred3 {
+    border: 1px solid green;
+}
