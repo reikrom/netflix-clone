@@ -4,11 +4,9 @@ import Logo from '../../public/logo-shadow2x.png';
 import { Menu } from '@mui/icons-material';
 import { Input } from '@mui/material';
 
-interface Props {}
-
 const header = 'flex items-center px-5';
 
-const Header = (props: Props) => {
+const Header = () => {
     return (
         <div className={`${header} h-11`}>
             <Menu className="text-light-1 w-8 h-8" />
