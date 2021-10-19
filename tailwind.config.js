@@ -21,18 +21,31 @@ const colors = {
         3: '#f5f5f5',
         4: '#e0e0e0',
     },
+    text: {
+        1: '#808080',
+    },
     red: 'red',
 };
 
 module.exports = {
-    purge: [
-        './pages/**/*.{js,ts,jsx,tsx}',
-        './components/**/*.{js,ts,jsx,tsx}',
-    ],
+    purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
     darkMode: false, // or 'media' or 'class'
     theme: {
         colors: colors,
-        extend: {},
+        extend: {
+            zIndex: {
+                '-10': -10,
+                '-20': -20,
+                '-30': -30,
+                '-40': -40,
+                '-50': -50,
+                '-60': -60,
+                '-70': -70,
+                '-80': -80,
+                '-90': -90,
+                '-100': -100,
+            },
+        },
     },
     variants: {
         extend: {},

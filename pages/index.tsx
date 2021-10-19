@@ -34,9 +34,7 @@ const Home: NextPage = () => {
                 </div>
             </main>
 
-            <footer className={(styles.footer, 'bg-light-3 py-10 text-center absolute bottom-0 right-1 w-full')}>
-                this is a footer
-            </footer>
+            {/* <footer className={(styles.footer, 'bg-light-3 py-10 text-center ')}>this is a footer</footer> */}
         </div>
     );
 };
