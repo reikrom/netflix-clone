@@ -1,0 +1,15 @@
+.mobileNavigation {
+    @apply bg-dark-4 absolute left-0 top-0  z-20 text-text-1 font-bold  leading-8 w-64;
+    height: calc(100vh - 44px);
+    > ol > li {
+        @apply pl-4;
+    }
+}
+.menuSettings {
+    @apply border-dark-1 pb-2 mb-2;
+    border-bottom: 1px solid;
+}
+
+.genreList {
+    @apply leading-loose;
+}
