@@ -1,0 +1,15 @@
+.header {
+    @apply flex items-center px-5 h-11 bg-dark-4 z-20 relative;
+}
+
+.searchInput {
+    @apply text-light-4 border border-light-4 py-1 px-2 w-32 ml-auto bg-dark-3 h-8;
+}
+
+.menuIcon {
+    @apply text-light-1 w-8 h-8;
+}
+
+.backdrop {
+    @apply bg-red opacity-20 h-screen w-screen fixed left-0 top-0 z-10;
+}
