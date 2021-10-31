@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import MobileGallery from 'components/menu/MobileGallery/MobileGallery';
-
-const imgArr = [...Array(100).keys()];
+import { imgArr } from 'Models/Placeholder';
 
 const Home: NextPage = () => {
     const [counter, setCounter] = useState(0);
