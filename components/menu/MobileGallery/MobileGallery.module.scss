@@ -1,0 +1,35 @@
+.rowName {
+    @apply text-xl font-bold mb-3 text-primary-gray;
+}
+
+.watchTitle {
+    display: inline-block;
+    margin-bottom: 2em;
+
+    width: 50%;
+    @media (min-width: 501px) {
+        width: 33.333%;
+    }
+    @media (min-width: 801px) {
+        width: 25%;
+    }
+    @media (min-width: 1101px) {
+        width: 20%;
+    }
+    @media (min-width: 1401px) {
+        width: 16.66666667%;
+    }
+    @media (min-width: 1401px) {
+        width: 14.28571429%;
+    }
+    @media (min-width: 1401px) {
+        width: 12.5%;
+    }
+
+    > div {
+        width: 99%;
+        padding: 28.125% 0;
+        background-size: cover;
+        display: block;
+    }
+}
