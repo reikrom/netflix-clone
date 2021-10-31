@@ -26,7 +26,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { id } }: DefineLater) {
-    console.log(id, 'id');
     const pageTitle = getPageTitle(id);
 
     return {
