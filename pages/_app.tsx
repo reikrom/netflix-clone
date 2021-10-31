@@ -5,7 +5,6 @@ import type { AppProps } from 'next/app';
 import Header from 'components/header/Header';
 
 function MyApp({ Component, pageProps }: AppProps) {
-    console.log(pageProps, 'pageProps');
     return (
         <>
             <Header />

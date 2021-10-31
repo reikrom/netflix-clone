@@ -1,5 +1,6 @@
 .mobileNavigation {
-    @apply bg-dark-4 absolute left-0 top-0  z-20 text-text-1 font-bold  leading-8 w-64;
+    top: 44px;
+    @apply bg-dark-4 overflow-y-scroll fixed left-0  z-20 text-text-1 font-bold  leading-8 w-64;
     height: calc(100vh - 44px);
     > ol > li {
         @apply pl-4;
