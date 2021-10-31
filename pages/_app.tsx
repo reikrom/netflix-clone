@@ -9,8 +9,13 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
             <Header />
-            <Component {...pageProps} />
-            WTF
+            <div
+                style={{ padding: '0 4%' }}
+                className="mt-16
+}"
+            >
+                <Component {...pageProps} />
+            </div>
         </>
     );
 }
