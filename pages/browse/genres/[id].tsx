@@ -16,18 +16,16 @@ export async function getStaticPaths() {
     const genreParams = genres.map((g) => ({
         params: {
             id: g.id.toString(),
-            title: g.title,
         },
     }));
     return {
         paths: genreParams,
-        fallback: true,
+        fallback: false,
     };
 }
 
 export async function getStaticProps({ params: { id } }: DefineLater) {
     const pageTitle = getPageTitle(id);
-
     return {
         props: {
             title: pageTitle,

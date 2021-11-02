@@ -30,7 +30,8 @@
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "removeComments": true,
-        "types": []
+        "types": [],
+        "incremental": true
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules", "dist", "coverage", ".next"]

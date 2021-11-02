@@ -15,7 +15,7 @@ const MobileNavigation = (isOpen: Props) => {
     return (
         <div className={c.mobileNavigation}>
             <ol className={c.menuSettings}>
-                <MenuListItem>
+                <MenuListItem href="SwitchAccount">
                     <Image className="inline-block" src={ProfilePic} height="32" width="32" />
                     <div className="inline-block pl-2">
                         <div>Username</div>
