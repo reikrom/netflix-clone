@@ -4,7 +4,7 @@ import { Menu as MenuIcon } from '@mui/icons-material';
 import { Input } from '@mui/material';
 import MobileNavigation from 'components/menu/MobileNavigation';
 import Logo from './Logo';
-import c from './header.module.scss';
+import c from './Header.module.scss';
 import cn from 'classnames';
 
 const Header = () => {

@@ -1,6 +1,7 @@
+import RowName from 'components/RowName';
+import WatchTitle from 'components/WatchTitle';
 import { DefineLater } from 'Models/Placeholder';
 import React from 'react';
-import c from './MobileGallery.module.scss';
 
 interface Props {
     title: string;
@@ -11,12 +12,10 @@ const MobileGallery = ({ title, watchTitles }: Props) => {
     if (watchTitles === undefined) return null;
     return (
         <div>
-            <h2 className={c.rowName}>{title}</h2>
+            <RowName title={title} />
             <div className="mobileMultiRow">
                 {watchTitles.map((item: DefineLater, index: number) => (
-                    <a key={index} className={c.watchTitle} href={item.href}>
-                        <div style={{ backgroundImage: 'url("https://via.placeholder.com/150")' }} />
-                    </a>
+                    <WatchTitle key={index} href={item.href} />
                 ))}
             </div>
         </div>

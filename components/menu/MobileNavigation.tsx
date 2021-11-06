@@ -2,7 +2,7 @@ import React from 'react';
 import ProfilePic from '../../public/profile-pic.png';
 import Image from 'next/image';
 import MenuListItem from './MenuListItem';
-import c from './mobileNavigation.module.scss';
+import c from './MobileNavigation.module.scss';
 import { genres } from '../../utils/routes';
 
 interface Props {

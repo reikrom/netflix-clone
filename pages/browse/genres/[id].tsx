@@ -1,5 +1,5 @@
 import MobileGallery from 'components/menu/MobileGallery/MobileGallery';
-import { DefineLater, imgArr } from 'Models/Placeholder';
+import { DefineLater, imgArr100 } from 'Models/Placeholder';
 import React from 'react';
 import { getPageTitle, genres } from 'utils/routes';
 
@@ -29,7 +29,7 @@ export async function getStaticProps({ params: { id } }: DefineLater) {
     return {
         props: {
             title: pageTitle,
-            watchTitles: imgArr,
+            watchTitles: imgArr100,
         },
     };
 }

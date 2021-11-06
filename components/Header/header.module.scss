@@ -1,18 +1,39 @@
 .header {
-    @apply flex fixed items-center px-5 h-11 bg-dark-4 bg-opacity-50 top-0 z-20 w-full;
+    @apply flex
+        fixed 
+        items-center 
+        px-5 
+        h-11 
+        bg-dark-4 
+        bg-opacity-50 
+        top-0 
+        z-20 w-full;
 }
 
 .searchInput {
-    @apply border border-light-4 py-1 px-2 w-32 ml-auto h-8;
+    @apply border 
+        border-light-4 
+        py-1 
+        px-2 
+        w-32 
+        ml-auto 
+        h-8;
     // override classes that revert only after building
     color: #e0e0e0 !important;
     background: #21212122 !important;
 }
 
 .menuIcon {
-    @apply text-light-1 w-8 h-8;
+    @apply text-light-1 
+        w-8 
+        h-8;
 }
 
 .backdrop {
-    @apply bg-red opacity-20 h-screen w-screen fixed left-0 top-0 z-10;
+    @apply bg-red 
+        opacity-20 
+        h-screen 
+        w-screen 
+        fixed left-0 
+        top-0 z-10;
 }
