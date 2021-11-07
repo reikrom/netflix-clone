@@ -4,10 +4,15 @@
         items-center 
         px-5 
         h-11 
+        md:h-16
         bg-dark-4 
         bg-opacity-50 
         top-0 
         z-20 w-full;
+    @media (min-width: 768px) {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
 }
 
 .searchInput {
@@ -15,8 +20,8 @@
         border-light-4 
         py-1 
         px-2 
-        w-32 
-        ml-auto 
+        w-32
+        sm:w-44 
         h-8;
     // override classes that revert only after building
     color: #e0e0e0 !important;
@@ -26,14 +31,36 @@
 .menuIcon {
     @apply text-light-1 
         w-8 
-        h-8;
+        h-8
+        md:hidden;
 }
 
 .backdrop {
-    @apply bg-red 
-        opacity-20 
+    @apply opacity-80 
         h-screen 
         w-screen 
         fixed left-0 
         top-0 z-10;
+    background: black;
+}
+
+.browse {
+    @apply text-primary-red 
+        font-bold px-4 
+        hidden
+        md:block
+        ml-8;
+}
+
+.rightSideHeader {
+    @apply ml-auto
+        flex;
+}
+
+.account {
+    @apply text-light-4
+        md:flex 
+        align-middle 
+        ml-6 
+        hidden;
 }

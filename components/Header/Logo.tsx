@@ -6,7 +6,7 @@ interface Props {}
 
 const Logo = (props: Props) => {
     return (
-        <div className="logo h-6 pl-4">
+        <div className="logo h-6 pl-4 md:pl-0">
             <Image src={LogoImg} height="24" width="84" />
         </div>
     );

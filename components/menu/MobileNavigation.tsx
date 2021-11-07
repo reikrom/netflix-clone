@@ -28,7 +28,7 @@ const MobileNavigation = (isOpen: Props) => {
             </ol>
             <ol>
                 <MenuListItem href="/" text="Home" />
-                <MenuListItem href="myList" text="My List" />
+                <MenuListItem href="mylist" text="My List" />
             </ol>
             <ol className={c.genreList}>{displayGenres}</ol>
         </div>
