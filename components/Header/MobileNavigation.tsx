@@ -10,7 +10,9 @@ interface Props {
 }
 
 const MobileNavigation = (isOpen: Props) => {
-    const displayGenres = genres.map((genre) => <MenuListItem key={genre.id} genreId={genre.id} text={genre.title} />);
+    const displayGenres = genres.map((genre) => (
+        <MenuListItem key={genre.id} genreId={genre.id} text={genre.title} />
+    ));
 
     return (
         <div className={c.mobileNavigation}>
@@ -19,7 +21,9 @@ const MobileNavigation = (isOpen: Props) => {
                     <Image className="inline-block" src={ProfilePic} height="32" width="32" />
                     <div className="inline-block pl-2">
                         <div>Username</div>
-                        <div className="text-[11.5px] leading-[0px] font-normal">Switch Profiles</div>
+                        <div className="text-[11.5px] leading-[0px] font-normal">
+                            Switch Profiles
+                        </div>
                     </div>
                 </MenuListItem>
                 <MenuListItem href="YourAccount" text="Account" />

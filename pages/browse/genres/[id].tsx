@@ -1,4 +1,4 @@
-import MobileGallery from 'components/menu/MobileGallery/MobileGallery';
+import MobileGallery from 'components/MobileGalleryLayout';
 import { DefineLater, imgArr100 } from 'Models/Placeholder';
 import React from 'react';
 import { getPageTitle, genres } from 'utils/routes';

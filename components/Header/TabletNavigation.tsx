@@ -6,7 +6,9 @@ import c from './TabletNavigation.module.scss';
 interface Props {}
 
 const TabletNavigation = (props: Props) => {
-    const displayGenres = genres.map((genre) => <MenuListItem key={genre.id} genreId={genre.id} text={genre.title} />);
+    const displayGenres = genres.map((genre) => (
+        <MenuListItem key={genre.id} genreId={genre.id} text={genre.title} />
+    ));
 
     return (
         <div className={c.tabletMenu}>

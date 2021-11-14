@@ -1,6 +1,6 @@
 import { DefineLater, imgArr100 } from 'Models/Placeholder';
 import React from 'react';
-import MobileGallery from '../components/menu/MobileGallery/MobileGallery';
+import MobileGallery from '../components/MobileGalleryLayout';
 
 interface Props {
     title: string;

@@ -54,13 +54,14 @@
 
 .rightSideHeader {
     @apply ml-auto
-        flex;
+        flex
+        items-center;
 }
 
 .account {
     @apply text-light-4
         md:flex 
-        align-middle 
+        items-center 
         ml-6 
         hidden;
 }

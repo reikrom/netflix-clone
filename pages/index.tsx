@@ -2,7 +2,7 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { imgArr20 } from 'Models/Placeholder';
-import SingleRow from 'components/SingleRow';
+import SingleRow from 'components/RowGalleryLayout';
 import { genres } from 'utils/routes';
 
 const Home: NextPage = () => {

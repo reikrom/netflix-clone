@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
+import c from './Header.module.scss';
 
 import { Menu as MenuIcon } from '@mui/icons-material';
 import { Input } from '@mui/material';
-import MobileNavigation from 'components/menu/MobileNavigation';
+import SearchIcon from '@mui/icons-material/Search';
+import MobileNavigation from './MobileNavigation';
 import ProfilePic from '../../public/profile-pic.png';
 import Logo from './Logo';
 import Image from 'next/image';
-import c from './Header.module.scss';
 import cn from 'classnames';
-import TabletNavigation from 'components/menu/TabletNavigation';
+import TabletNavigation from 'components/header/TabletNavigation';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState({ mobile: false, tablet: false });
@@ -32,6 +34,7 @@ const Header = () => {
                 </div>
                 {isOpen.tablet && <TabletNavigation />}
                 <div className={c.rightSideHeader}>
+                    <SearchIcon sx={{ color: 'white' }} />
                     <Input
                         id="search"
                         disableUnderline
@@ -40,10 +43,11 @@ const Header = () => {
                         placeholder="Search"
                         type="Search"
                     />
+                    <NotificationsIcon sx={{ color: 'white' }} />
                     <div className={c.account}>
                         <Image className="inline-block" src={ProfilePic} height="32" width="32" />
                         <div className="inline-block pl-2 leading-8">
-                            <div>Username</div>
+                            <div className={cn('lg:hidden')}>Username</div>
                         </div>
                     </div>
                 </div>
