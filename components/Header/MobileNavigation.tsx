@@ -3,6 +3,7 @@ import ProfilePic from '../../public/profile-pic.png';
 import Image from 'next/image';
 import MenuListItem from './MenuListItem';
 import c from './MobileNavigation.module.scss';
+import cn from 'classnames';
 import { genres } from '../../utils/routes';
 
 interface Props {
@@ -11,13 +12,40 @@ interface Props {
 
 const MobileNavigation = (isOpen: Props) => {
     const displayGenres = genres.map((genre) => (
-        <MenuListItem key={genre.id} genreId={genre.id} text={genre.title} />
+        <MenuListItem
+            className="listItem pl-4"
+            key={genre.id}
+            genreId={genre.id}
+            text={genre.title}
+        />
     ));
 
     return (
-        <div className={c.mobileNavigation}>
-            <ol className={c.menuSettings}>
-                <MenuListItem href="SwitchAccount">
+        <div
+            className={cn(
+                c.mobileNavigation,
+                `
+                top-[44px]
+                bg-dark-4 
+                overflow-y-scroll 
+                fixed 
+                left-0  
+                z-20 
+                text-text-1 
+                font-bold  
+                leading-8 
+                w-64
+                `
+            )}
+        >
+            <ol
+                className="menuSettings 
+                    pb-2
+                    mb-2
+                    border-b
+                    border-dark-1"
+            >
+                <MenuListItem className="listItem pl-4" href="SwitchAccount">
                     <Image className="inline-block" src={ProfilePic} height="32" width="32" />
                     <div className="inline-block pl-2">
                         <div>Username</div>
@@ -26,15 +54,15 @@ const MobileNavigation = (isOpen: Props) => {
                         </div>
                     </div>
                 </MenuListItem>
-                <MenuListItem href="YourAccount" text="Account" />
-                <MenuListItem href="en" text="Help Centre" />
-                <MenuListItem href="Logout" text="Sign out of Netflix" />
+                <MenuListItem className="listItem pl-4" href="YourAccount" text="Account" />
+                <MenuListItem className="listItem pl-4" href="en" text="Help Centre" />
+                <MenuListItem className="listItem pl-4" href="Logout" text="Sign out of Netflix" />
             </ol>
             <ol>
-                <MenuListItem href="/" text="Home" />
-                <MenuListItem href="mylist" text="My List" />
+                <MenuListItem className="listItem pl-4" href="/" text="Home" />
+                <MenuListItem className="listItem pl-4" href="mylist" text="My List" />
             </ol>
-            <ol className={c.genreList}>{displayGenres}</ol>
+            <ol className="genreList leading-loose">{displayGenres}</ol>
         </div>
     );
 };

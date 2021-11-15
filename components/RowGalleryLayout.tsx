@@ -12,7 +12,13 @@ const SingleRow = ({ watchTitles, title }: Props) => {
     return (
         <div className="singleRow">
             <RowName title={title} />
-            <div className="inlineRow overflow-x-scroll overflow-y-hidden whitespace-nowrap scrollbar-hidden">
+            <div
+                className="inlineRow
+                    overflow-x-scroll 
+                    overflow-y-hidden 
+                    whitespace-nowrap 
+                    scrollbar-hidden"
+            >
                 {watchTitles.map(({ watchTitle }: DefineLater, index: number) => (
                     <WatchTitle key={index} href={watchTitle?.href} />
                 ))}

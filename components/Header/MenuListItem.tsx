@@ -6,11 +6,12 @@ interface Props {
     children?: any;
     genreId?: number;
     href?: string;
+    className?: string;
 }
 
-const MenuListItem = ({ text, children, href, genreId }: Props) => {
+const MenuListItem = ({ text, children, href, genreId, className }: Props) => {
     return (
-        <li>
+        <li className={className}>
             {href ? (
                 <Link href={href}>
                     <a>

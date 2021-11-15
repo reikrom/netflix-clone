@@ -1,9 +1,5 @@
 .mobileNavigation {
     height: calc(100vh - 44px);
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
 }
 
 .activeGenre {
