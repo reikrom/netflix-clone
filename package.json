@@ -18,12 +18,14 @@
     "dependencies": {
         "@chakra-ui/icons": "^1.1.1",
         "@chakra-ui/react": "^1.7.1",
+        "@emotion/css": "^11.5.0",
         "@emotion/react": "^11.6.0",
         "@emotion/styled": "^11.6.0",
         "classnames": "^2.3.1",
         "framer-motion": "^4.1.17",
         "next": "11.1.2",
         "react": "17.0.2",
+        "react-device-detect": "^2.1.2",
         "react-dom": "17.0.2",
         "sass": "^1.42.1"
     },
